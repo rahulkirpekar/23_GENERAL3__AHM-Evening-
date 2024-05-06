@@ -1,0 +1,24 @@
+//	       01234	
+String name = "madam";
+	       i   j	
+boolean flag = true;
+
+for(int i = 0 , j=(name.length()-1); i < name.length();i++,j--)
+{
+	char a = name.charAt(i);
+	char b = name.charAt(j);
+	if(a != b)
+	{
+		flag = false;
+		break;
+	}
+}
+if(flag)
+{
+	System.out.println("Name is Palindrome : " + name);
+}else
+{
+	System.out.println("Name is not Palindrome : " + name);
+}
+
+Rahul@Git2903

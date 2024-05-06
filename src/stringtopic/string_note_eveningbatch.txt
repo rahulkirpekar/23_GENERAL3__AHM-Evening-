@@ -1,0 +1,127 @@
+java.lang.String / System
+  |
+class
+  |
+String(Multiple characters)
+
+
+Multiple characters---[char Array]
+
+
+
+
+    Scanner
+      |
+char value---scan display
+
+
+sc.nextBoolean();
+
+	1) char value = (char)System.in.read();
+	2) char value = sc.next().charAt(0);
+
+
+
+
+String Data---String/StringBuffer/StringBuilder
+----------------------------------------------------------------------
+
+		Way to operation on String Data
+		---------------------------------
+1) ImmutableWay					2) Mutableway
+-------------------				-------------------
+String						--->StringBuilder
+						--->StringBuffer
+
+
+1) ImmutableWay(String):-
+---------------------------------------------------------------------------------
+
+	1) By String Literal Way[RAM------HEAP-----["SCP"]--["String Constant Pool"]]:-
+	---------------------------	
+		String name1 = "rahul";
+		String name2 = "rahul";
+		String name3 = name1;
+		String name5 = "sagar";
+		// rahul kirpekar
+		name4 = name1.concat(" Kirpekar");
+
+	// reference:-	
+	-------------
+		SOP(name1==name2);// true
+		SOP(name1==name3);// true
+		SOP(name1==name4);// false
+		SOP(name1==name5);// false
+	// value:-	
+	-------------
+		SOP(name1.equals(name2));// true
+		SOP(name1.equals(name3));// true
+		SOP(name1.equals(name4));// false 
+		SOP(name1.equals(name5));// false
+
+
+		SOP(name4);// rahul kirpekar
+
+
+	2) By 'new' keyword way[RAM------["HEAP"]]:-
+	----------------------------------------------
+		String name1 = new String("rahul");
+		String name2 = new String("rahul");
+		String name3 = new String(name1);
+		String name5 = new String("sagar");
+		// rahul kirpekar
+		name4 = name1.concat(" Kirpekar");
+	// reference:-	
+	-------------
+		SOP(name1==name2);// false
+		SOP(name1==name3);// true
+		SOP(name1==name4);// false
+		SOP(name1==name5);// false
+	
+	// value:-	
+	-------------
+		SOP(name1.equals(name2));// true
+		SOP(name1.equals(name3));// true
+		SOP(name1.equals(name4));// false 
+		SOP(name1.equals(name5));// false
+
+-------------------------------------------------------------------------------------------
+Object Equality:-
+-----------------
+
+	1) (==)object--reference
+	2) equals()----object----value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
