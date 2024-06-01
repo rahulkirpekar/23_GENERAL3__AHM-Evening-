@@ -23,21 +23,56 @@ public class TestApp1
 //										     --------------
 //											   |
 //										       "code-crashed"		
-			
 			int ans = 0;
 					
 			try 
 			{
-				ans = no1 / no2;// JVM---AE--create object----assign to e(reference variable)
+				// Nested try..catch
+				try 
+				{
+					
+					ans = no1 / no2;// JVM---AE--create object----assign to e(reference variable)
+					
+				} catch (Exception e) 
+				{
+					e.printStackTrace();
+				}
 				
-			} catch (ArithmeticException e) 
+				try 
+				{
+					
+					String name = null;
+					System.out.println("name.length() : " + name.length());
+					
+				} catch (Exception e) 
+				{
+					e.printStackTrace();
+				}
+
+				try 
+				{
+					
+					int a[] = new int[5];
+					a[5] = 100;
+					
+				} catch (Exception e) 
+				{
+					e.printStackTrace();
+				}
+
+				
+			}catch (ArithmeticException | NullPointerException | ArrayIndexOutOfBoundsException e) 
 			{
-				System.out.println("Catch Block Handled ---Exception");
+				System.out.println("Catch Block Handled ---Exception---"+e.getClass().getName());
 				e.printStackTrace();
-			}
+				
+			}catch (Exception e) 
+			{
+				System.out.println("Catch Block Handled ---Exception---"+e.getClass().getName());
+				e.printStackTrace();
+			} 
 			
 			System.out.println("Ans : "+ans);
-			
 			
 			System.out.println("Statement------6 ");
 			System.out.println("Statement------7 ");
