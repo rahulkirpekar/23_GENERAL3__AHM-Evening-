@@ -1,0 +1,74 @@
+Java String Methods:-
+--------------------------
+         
+charAt(index)---char         
+compareTo()--int         
+concat()         
+contains()         
+endsWith()         
+equals()---boolean
+equalsIgnoreCase()         
+format()-----%d , %c , %f         
+getBytes() 
+
+        
+getChars()         
+indexOf()  
+lastIndexOf()           
+intern()         
+isEmpty() 
+isBlank()                
+     
+length()               
+split()         
+startsWith()         
+substring()         
+toCharArray()         
+toLowerCase()         
+toUpperCase()         
+trim()         
+valueOf()
+
+
+Java String Program to Check Anagram
+Java String Program to Reverse a String
+
+
+
+name1 = silent		name2 = "listen"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	1) Immutable		2) Mutable
+	---> String		--->StringBuilder--
+				--->StringBuffer---Thread
+
+		|			|
+	     concat--------------->append()
+	        -  --------------->reverse()
+
+
+
+
+
+

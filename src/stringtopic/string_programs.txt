@@ -1,0 +1,63 @@
+1) Java Program to Find the First Non-repeated Character in a String
+2) Java Program to Check Palindrome String
+3) Java Program to Find Duplicate Characters in a String
+4) Java Program to Find Duplicate Words in a String
+5) Java Program to Find All the Permutations of a String
+6) Java Program to Count Occurrences of Words in a String
+7) Java Program to Count the Occurrences of Each Character
+8) Java Program to Count Vowels and Consonants in a String
+9) Java program to Count the Number of Duplicate Words in a String
+10) Java Program to Count Number of Words in Given String
+11) Java Program to Count the Number of Occurrences of Substring in a String
+12) Java Program to Count the Occurrences of Each Character in String
+13) Java Program to Merge Two String Arrays
+14) Java Program to Remove Duplicate Words from String
+15) Java Program to Reverse a String(5 ways)
+16) Java Program to Reverse Each Word of a String
+17) Java Program to Swap Two Strings
+18) How to Check if the String Contains Only Digits
+19) How to Check if the String Contains Only Letters
+20) How to Check If the String Contains Only Letters or Digits
+21) Java Program to Swap Two Strings Without Using Third Variable
+22) Java String Program to Print even length words
+23) Java String Program to Insert a string into another string
+24) Java String program to check whether a string is a Palindrome
+25) Java String Program to Check Anagram
+26) Java String Program to Reverse a String
+27) Java String Program to Print a New Line in String
+28) Java String Program to  Add Characters to a String
+29) Java String Program to Iterate Over Characters in String
+30) Java String Program to Convert Enum to String
+31) Java String Program to Get a Character From the Given String
+32) Java String Program to Convert String to String Array
+33) Java String Program to Swapping Pair of Characters
+34) Java String Program to Splitting into a number of sub-strings
+35) Java Program to count the total number of characters in a string
+36) Java Program to count the total number of characters in a string 2
+37) Java Program to count the total number of punctuation characters exists in a String
+38) Java Program to count the total number of vowels and consonants in a string
+39) Java Program to determine whether two strings are the anagram
+40) Java Program to divide a string in 'N' equal parts.
+41) Java Program to find all subsets of a string
+42) Java Program to find the longest repeating sequence in a string
+43) Java Program to find all the permutations of a string
+44) Java Program to remove all the white spaces from a string
+45) Java Program to replace lower-case characters with upper-case and vice-versa
+46) Java Program to replace the spaces of a string with a specific character
+47) Java Program to determine whether a given string is palindrome
+48) Java Program to determine whether one string is a rotation of another
+49) Java Program to find maximum and minimum occurring character in a string
+50) Java Program to find Reverse of the string
+51) Java program to find the duplicate characters in a string
+52) Java program to find the duplicate words in a string
+53) Java Program to find the frequency of characters
+54) Java Program to find the largest and smallest word in a string
+55) Java Program to find the most repeated word in a text file
+56) Java Program to find the number of the words in the given text file
+57) Java Program to separate the Individual Characters from a String
+58) Java Program to swap two string variables without using third or temp variable.
+59) Java Program to print smallest and biggest possible palindrome word in a given string
+60) Reverse String in Java Word by Word
+61) Reserve String without reverse() function
+
+

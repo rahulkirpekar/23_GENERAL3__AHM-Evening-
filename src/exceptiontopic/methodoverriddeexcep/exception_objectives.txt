@@ -1,0 +1,323 @@
+----------------------------------------------------------------------------
+1. Which keyword is used to handle an exception in Java?
+a) throw
+b) throws
+c) try
+d) catch
+----------------------------------------------------------------------------
+2. Which of these is a superclass of all exception types in Java?
+a) RuntimeException
+b) Throwable
+c) Error
+d) Exception
+----------------------------------------------------------------------------
+3. What is the purpose of the finally block in exception handling?
+a) To handle the exception
+b) To declare an exception
+c) To execute code, regardless of whether an exception is caught
+d) To throw an exception
+----------------------------------------------------------------------------
+4. Which of these is not a checked exception?
+a) IOException
+b) SQLException
+c) ArithmeticException
+d) ClassNotFoundException
+----------------------------------------------------------------------------
+5. Which statement is true about checked exceptions?
+a) They are checked at compile-time
+b) They are not checked at runtime
+c) They can be ignored during compilation
+d) They are only thrown by the JVM
+----------------------------------------------------------------------------
+6. What is the purpose of the throw keyword in Java?
+a) To handle an exception
+b) To declare an exception
+c) To recover from an exception
+d) To explicitly throw an exception
+----------------------------------------------------------------------------
+7. What does the throws keyword do in a method signature?
+a) Catches the exception thrown by the method
+b) Declares an exception that might be thrown by the method
+c) Throws an exception explicitly
+d) Handles multiple exceptions
+----------------------------------------------------------------------------
+8. Which of these exception types is used to indicate a problem with code logic?
+a) IOException
+b) SQLException
+c) NullPointerException
+d) ArrayIndexOutOfBoundsException
+----------------------------------------------------------------------------
+9. What is a custom exception in Java?
+a) An existing exception provided by the Java API
+b) An exception that is thrown automatically by the JVM
+c) An exception defined by the user
+d) An unchecked exception
+----------------------------------------------------------------------------
+10. Which method is commonly used to print the stack trace of an exception?
+a) printStackTrace()
+b) getMessage()
+c) getCause()
+d) toString()
+----------------------------------------------------------------------------
+11. What happens if an exception is not caught in the catch block?
+a) The finally block handles it
+b) The exception is ignored
+c) The exception is thrown to the caller method
+d) The program terminates immediately
+----------------------------------------------------------------------------
+12. Which of these is a runtime exception?
+a) IOException
+b) InterruptedException
+c) NumberFormatException
+d) ReflectiveOperationException
+----------------------------------------------------------------------------
+13. What is the correct way to declare a method that might throw an IOException?
+a) public void readFile() throws IOException
+b) public void readFile() catch IOException
+c) public void readFile() throw IOException
+d) public void readFile() exception IOException
+----------------------------------------------------------------------------
+14. Can a try block exist without a catch block?
+a) No, a try block must be followed by a catch block
+b) Yes, but only if followed by a finally block
+c) Yes, a try block can exist independently
+d) Yes, but only if the exceptions are handled elsewhere
+----------------------------------------------------------------------------
+15. What type of exceptions do Errors represent?
+a) Syntax errors
+b) Runtime errors that are recoverable
+c) Problems that are external to the application
+d) Severe problems that are not expected to be caught under normal circumstances
+----------------------------------------------------------------------------
+16. What is the main reason to use a finally block in Java?
+a) To catch exceptions
+b) To throw exceptions
+c) To run cleanup code regardless of exception occurrence
+d) To log the occurrence of an exception
+----------------------------------------------------------------------------
+17. What will happen if both try and catch blocks have return statements in Java?
+a) Compilation error
+b) The method will always return the value from the try block
+c) The method will always return the value from the catch block
+d) The return statement in the finally block, if present, will override the others
+----------------------------------------------------------------------------
+18. How can multiple exceptions be caught in a single catch block in Java?
+a) By using the pipe character (|)
+b) By separating exception types with a comma
+c) By listing all exceptions in parentheses
+d) It is not possible to catch multiple exceptions in a single catch block
+----------------------------------------------------------------------------
+19. What is exception chaining in Java?
+a) Throwing multiple exceptions one after another
+b) Combining several catch blocks into one
+c) Setting a cause for an exception
+d) Handling exceptions in a parent-child hierarchy
+----------------------------------------------------------------------------
+20. Which keyword is used to manually throw an exception in Java?
+a) throw
+b) throws
+c) trigger
+d) raise
+----------------------------------------------------------------------------
+21. What is the difference between final, finally, and finalize in Java?
+a) There is no significant difference
+b) final is a keyword, finally is a block, and finalize is a method
+c) final and finally are keywords, finalize is a block
+d) final and finalize are methods, finally is a keyword
+----------------------------------------------------------------------------
+22. In which scenario is a ClassNotFoundException thrown?
+a) When a class is not found in the classpath at runtime
+b) When a class cannot be instantiated
+c) When a method in a class cannot be found
+d) When a file containing the class definition cannot be found
+----------------------------------------------------------------------------
+23. Which exception is thrown when an attempt is made to access an illegal array index?
+a) NullPointerException
+b) ArrayIndexOutOfBoundsException
+c) IllegalArgumentException
+d) IndexOutOfBoundsException
+----------------------------------------------------------------------------
+24. What does the term "exception propagation" refer to in Java?
+a) Spreading an exception to different classes
+b) Forwarding a caught exception to a higher method in the call stack
+c) The process of creating custom exceptions
+d) Distributing exceptions among multiple catch blocks
+----------------------------------------------------------------------------
+25. What is the result of compiling and running a Java program with a try block having only a return statement and no catch or finally block?
+a) Compilation error
+b) Runtime exception
+c) The return statement in the try block is executed
+d) The program does nothing
+----------------------------------------------------------------------------
+26. Which exception is thrown when an application tries to create an instance of a class using the newInstance method of class Class, but the specified class object cannot be instantiated?
+a) ClassNotFoundException
+b) InstantiationException
+c) IllegalAccessException
+d) NoSuchMethodException
+----------------------------------------------------------------------------
+27. What is the significance of the InterruptedException in Java?
+a) It indicates that a thread is waiting, sleeping, or otherwise occupied
+b) It is thrown when a thread is interrupted either before or during its activity
+c) It signals that a method has been interrupted by a timeout
+d) It is used to indicate that a thread has been paused
+----------------------------------------------------------------------------
+28. In Java, under which circumstance will the catch block for ArithmeticException catch a NullPointerException?
+a) Always
+b) Never, because NullPointerException is a different type of exception
+c) When NullPointerException is thrown as a cause of ArithmeticException
+d) When both exceptions have the same root cause
+----------------------------------------------------------------------------
+29. Which of these is a direct subclass of the Exception class (not RuntimeException)?
+a) ArithmeticException
+b) NullPointerException
+c) IOException
+d) IndexOutOfBoundsException
+----------------------------------------------------------------------------
+30. What is the output of a program that catches an IOException, but an ArithmeticException is thrown?
+a) The IOException catch block will handle it
+b) The ArithmeticException will not be caught and will propagate up the call stack
+c) A runtime error will occur
+d) The program will terminate immediately
+----------------------------------------------------------------------------
+31. How does the try-with-resources statement benefit exception handling in Java?
+a) It automatically handles all exceptions
+b) It provides a simpler syntax for handling multiple exceptions
+c) It automatically closes resources after execution
+d) It reduces the need for a finally block
+----------------------------------------------------------------------------
+32. What will be the result of compiling and running a Java program that has a try block with an unreachable catch block for ArithmeticException?
+a) Compilation error due to unreachable code
+b) Runtime exception
+c) The catch block for ArithmeticException will be ignored
+d) The program will run without any errors
+----------------------------------------------------------------------------
+33. Which statement is true about the Error class in Java?
+a) It is a subclass of Exception
+b) It is meant to be caught and handled by the application
+c) It derives from the Throwable class
+d) It is used for compile-time errors
+----------------------------------------------------------------------------
+34. What is the effect of declaring an exception in the throws clause of a method signature?
+a) It will handle the exception
+b) It forces the calling method to handle the exception
+c) It prevents the exception from being thrown
+d) It automatically catches the exception within the method
+----------------------------------------------------------------------------
+35. Which among the following best describes a checked exception?
+a) An exception that is checked at compile-time for a smooth runtime
+b) An exception that occurs at runtime and is not checked by the compiler
+c) Any instance of Throwable that is not an error
+d) An exception explicitly thrown using the throw keyword
+----------------------------------------------------------------------------
+36. In a method declaration, what does it mean to use 'throws Exception'?
+a) The method is capable of causing any Exception
+b) The method will definitely throw an Exception
+c) The method will handle all Exceptions
+d) The method might throw any checked exception
+----------------------------------------------------------------------------
+37. Which method is used to retrieve the detailed message of an exception?
+a) printStackTrace()
+b) getMessage()
+c) getCause()
+d) toString()
+----------------------------------------------------------------------------
+38. What is the primary difference between throw and throws in Java?
+a) throw is a keyword, throws is a method
+b) throw throws an exception, throws declares an exception
+c) throw is used in method definition, throws in method declaration
+d) There is no difference
+----------------------------------------------------------------------------
+39. What will happen if a try block is followed by multiple catch blocks?
+a) Compilation error
+b) Only the first catch block is executed
+c) Each catch block is checked in order and the first matching catch block is executed
+d) All matching catch blocks are executed
+----------------------------------------------------------------------------
+40. What kind of exception is thrown by the JVM when a method call is made on a null reference?
+a) NullPointerException
+b) ArithmeticException
+c) ClassCastException
+d) ArrayIndexOutOfBoundsException
+----------------------------------------------------------------------------
+41. What is the result of trying to compile a program with an empty try block and no catch or finally blocks?
+a) Compilation error
+b) Runtime exception
+c) The program compiles and runs without error
+d) The program compiles but throws an exception at runtime
+----------------------------------------------------------------------------
+42. When should the 'throws' keyword be used in a method signature?
+a) When the method definitely throws an exception
+b) When the method could potentially throw a checked exception
+c) When the method handles an exception
+d) When the method rethrows a caught exception
+----------------------------------------------------------------------------
+43. What is the correct way to handle multiple exceptions of the same type in Java?
+a) Using separate catch blocks for each exception
+b) Using a single catch block with multiple exception types separated by commas
+c) Using a single catch block with multiple exception types separated by the pipe (|) character
+d) It is not possible to handle multiple exceptions of the same type
+----------------------------------------------------------------------------
+44. Which exception is thrown when an illegal operation is performed on an empty container, such as a Queue or a Stack?
+a) EmptyStackException
+b) NoSuchElementException
+c) UnsupportedOperationException
+d) IllegalStateException
+----------------------------------------------------------------------------
+45. What is the correct syntax to create a custom exception in Java?
+a) class MyException extends RuntimeException {}
+b) class MyException implements Exception {}
+c) class MyException extends Exception {}
+d) class MyException throws Exception {}
+----------------------------------------------------------------------------
+46. What is the effect of an uncaught exception in the main thread of a Java application?
+a) The application continues to run
+b) Only the main thread terminates
+c) The entire application shuts down
+d) The exception is ignored
+----------------------------------------------------------------------------
+47. Which of the following is not a purpose of the finally block in Java exception handling?
+a) Cleaning up resources
+b) Catching exceptions
+c) Executing code regardless of whether an exception occurs
+d) Closing database connections
+----------------------------------------------------------------------------
+48. What is the result of catching an Exception type before catching its subclass type?
+a) Compilation error due to unreachable code
+b) The subclass exception will be caught first
+c) The Exception type catch block will catch all exceptions
+d) A runtime error will occur
+----------------------------------------------------------------------------
+49. What kind of exceptions are subclasses of RuntimeException in Java?
+a) Checked exceptions
+b) Unchecked exceptions
+c) Compile-time exceptions
+d) None of the above
+----------------------------------------------------------------------------
+50. Which method in Java is used to manually cause an exception during testing?
+a) System.throwException()
+b) Thread.throwException()
+c) throw new Exception()
+d) Exception.throw()
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+https://www.javaguides.net/2023/12/java-exception-handling-mcq-questions.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
