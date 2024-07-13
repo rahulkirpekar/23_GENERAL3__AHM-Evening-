@@ -1,0 +1,78 @@
+Stream(Buffer Area):-
+--------------------
+
+			Type of Stream
+			-----------------
+				|
+	------------------------------------------------
+	|			|		    |	
+1) InputStream(read)   2) OutputStream(write)  3) ErrorStream
+
+
+System.out.println("Hello");
+
+
+System.err.println("Hello");
+
+
+IO(InputStream(read):-
+--------------------------
+
+System.in ---- Console
+
+		    read(InputStream)      100
+	Programm<------------------------console
+
+
+	Scanner sc = new Scanner(System.in);
+
+	int no = sc.nextInt();
+
+
+
+System.out.println();
+	    	     write(OutputStream)
+	Programm<------------------------console
+
+
+
+OutputStream(write))
+
+Data:-
+------
+
+	String			UserDefined Objects(Student/Employee.Product)
+---------------------		---------------------
+
+1) Byte OrientedWay		1) Byte OrientedWay
+
+   --->write(FileOutputStream)
+   --->read(FileInputStream)
+
+
+2) Charcater OrientedWay
+
+   --->write(FileWriter)
+   --->read(FileReader)
+	
+------------------------------------------------------------------
+
+Data---Student/Product/Employee(object)
+						       ----------
+						       	 |
+						     Byte orientedway---write---data---file  	 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
