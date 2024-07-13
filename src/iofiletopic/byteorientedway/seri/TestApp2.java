@@ -21,6 +21,5 @@ public class TestApp2
 		{
 			e.printStackTrace();
 		}
-		
 	}
 }

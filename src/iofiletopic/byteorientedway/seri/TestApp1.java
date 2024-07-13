@@ -11,7 +11,6 @@ public class TestApp1
 	{
 		Student obj = new Student(1, "rahul", 12);
 		
-		
 		// Data --obj ---write---file
 		// Autoclosable Resource--[try..catch]
 		try
@@ -32,12 +31,3 @@ public class TestApp1
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
