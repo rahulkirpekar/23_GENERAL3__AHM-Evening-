@@ -1,0 +1,42 @@
+Sorting Techniques:-
+---------------------
+
+
+1) Comparable(I)			2) Comparator(I)
+------------------			------------------
+
+	compareTo(Object obj);			compare(Object o1 , Object o2);
+
+Student					Student
+	[rno name std marks]--name		[rno name std marks]--name	
+
+
+
+
+
+
+ interface			java.util.Collections;
+    |				    |
+Collection(I)			Collections(class)
+
+
+			DataType
+			--------
+
+Collections.sort(list);			Collections.sort(list);
+     |						|	
+---------------				-----------------
+1) Primitive				2) Non-Primitive
+---------------				-----------------
+Built-IN				User Defined DataType---[class]
+
+==> boolean				==> Student / Product / Employee / Customer
+==> byte
+==> char
+==> short
+==> int
+==> long
+==> float
+==> double
+
+==> String

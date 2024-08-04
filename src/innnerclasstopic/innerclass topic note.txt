@@ -1,0 +1,33 @@
+InnerClass:-
+---------------
+
+1) Member Innerclass
+2) Anonymous Innerclass
+3) Local Innerclass
+
+4) Nested Innerclass
+
+					       Innerclass
+						   |
+  Innerclass					Nested class	
+--------------------------		--------------------------
+class A					class A
+{					{
+	class B					static class B
+	{					{
+
+	}					}
+}					}
+
+
+// Outerclass
+class A
+{
+	private dm's/ function
+
+	// InnerClass
+	class B
+	{
+
+	}
+}

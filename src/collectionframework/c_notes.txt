@@ -1,0 +1,78 @@
+Array Limitations:-
+--------------------
+
+	int a[] = new int[5];
+
+	1) SIZE
+	2) Type---typesafe
+
+
+				Hiearchy of Collection Framework:-			
+				---------------------------------
+
+
+				Iterable(I)------------------------------------------------------
+				   |								|						|
+				Collection(I)						|						|
+				   |								|						|
+				   |Data---value					|						|
+				   |								|						|
+	----------------------------------------------------------				|
+	|			   |				|				|(Key,Value)			|
+  List(I)		  Set(I)		  Queue(I)			         			 Map(I)--[KEY,VALUE]
+	|			   |				|				|						|
+ AbstractList(AC) AbstractSet(AC)		AbstractQueue(AC)		   AbstractMap(AC)	
+	|			   |				|				|						|
+--ArrayList(C)	---HashSet(C)		---PriorityQueue(C)		    ---HashMap(C)
+--Vector(C)		---LinkedHashSet(C)						  	 	---LinkedHashMap(C)	
+--LinkedList(C)	---TreeSet(C)						   			---TreeMap(C)
+
+
+
+   List---[Sorting Techniques]
+    |
+--ArrayList---store---data---display
+
+--Vector---MutiThreadding applay---
+
+--LinkedList--[listobj]----[insert,update,delete]
+
+
+
+
+
+
+List
+ |
+--ArrayList---add
+
+--Vector---add---synchronized---->threadsafe(At a Time Single Thread)
+
+--LinkedList---add
+
+
+	StringBuilder	
+	StringBuffer---synchronized---->threadsafe(At a Time Single Thread)
+
+
+-LinkedList(C):-
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
