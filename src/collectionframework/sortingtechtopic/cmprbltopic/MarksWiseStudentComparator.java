@@ -10,6 +10,7 @@ public class MarksWiseStudentComparator implements Comparator<Student>
 		if(s1.getMarks() > s2.getMarks())             
 		{                                          
 			return 1;
+			
 		}else if(s1.getMarks() < s2.getMarks())       
 		{                                          
 			return -1;                             

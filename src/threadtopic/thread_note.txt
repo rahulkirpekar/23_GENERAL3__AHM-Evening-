@@ -1,0 +1,41 @@
+Java - MultiThreadded Programming Language
+--------------------------------------------------
+Thread:- Thread is light weight sub-process.
+-------
+
+		Way to create Thread in Java
+		--------------------------------
+			|	
+	------------------------------------------
+	|					|
+-----------------------------	------------------------------------------
+1) By extending Thread class	2) By implementing Runnable interface.
+-----------------------------	------------------------------------------
+Runnable(I)--void run();
+  |
+Thread(C)---void run(){}
+  |
+MyThread(MyClass)---
+
+	void run()
+	{
+		// Thread---job defined
+	}
+	PSVM()
+	{
+		MyThread obj = new MyThread();
+
+		obj.start();
+	}
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -26,9 +26,7 @@ public class TestApp1
 			Student s =  list.get(i);
 			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks());
 		}
-		
 		Collections.sort(list, new MarksWiseStudentComparator());
-		
 		System.out.println("After Student Marks Wise Sorting : ");
 		
 		for (int i = 0; i < list.size(); i++) 
@@ -36,9 +34,7 @@ public class TestApp1
 			Student s =  list.get(i);
 			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks());
 		}
-		
 		Collections.sort(list, new NameWiseStudentComparator());
-		
 		System.out.println("After Student Name Wise Sorting : ");
 		
 		for (int i = 0; i < list.size(); i++) 
@@ -46,7 +42,6 @@ public class TestApp1
 			Student s =  list.get(i);
 			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks());
 		}
-		
 		Collections.sort(list, new StdWiseStudentComparator());
 		System.out.println("After Student Std Wise Sorting : ");
 		
