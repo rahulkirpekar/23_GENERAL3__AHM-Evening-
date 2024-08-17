@@ -1,0 +1,62 @@
+Database Installation:-
+-----------------------
+
+	MYSQL
+		1) server---client windows
+
+		Java notepad--compile--run
+
+
+		2) workbench---server
+
+		java eclipse---compile/run--output
+
+
+
+JDBC:- Java Database Connectivity
+------
+
+			connect
+	Java Program------------------->Database(MySQL/ORACLE/POSTGRESS/MYSQL-SERVER)
+
+
+1) URLNAME="jdbc:mysql://localhost:3306/databaseName";
+2) DRIVERCLASS  = com.mysql.cj.jdbc.Driver
+3) USERNAME="root";
+4) PASSWORD="root";
+
+	mysql = URL = "jdbc:mysql://localhost:3306/databaseName";
+
+
+ create database 23_GENERAL3__AHM;
+
+			jdbc:mysql://localhost:3306/databaseName; 
+
+
+	 mysql-connector.jar   odbc.jar			.*jar			*.jar	
+		 |		  |			   |			  |	
+	    Driver.class    Driver.class               Driver.class            Driver.class 	
+		 |		  |			   |			  |
+		MySQL		ORACLE			POSTGRESS		MS-SQLSERVER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
