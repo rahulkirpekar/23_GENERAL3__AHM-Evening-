@@ -237,6 +237,30 @@ mysql>
 
 
 
+// Database--------------------------------
+// create database databasename;
+1) create database royal;
+
+
+// use databasename;
+2) use royal;
+
+// show tables;
+3) show tables;
+
+
+// create table
+4) 
+	CREATE TABLE Employee
+	(
+		id int AUTO_INCREMENT PRIMARY KEY,
+		name varchar(30),
+		salary int
+	);
+5) SELECT * FROM Employee;
+
+
+
 
 
 
