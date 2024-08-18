@@ -51,6 +51,107 @@ JDBC:- Java Database Connectivity
 
 
 
+1) DBconnection object
+
+2) create Table---Specific Database
+
+
+create 23_general3__ahm;
+
+use 23_general3__ahm;
+
+CREATE TABLE Student
+(
+	rno int AUTO_INCREMENT PRIMARY KEY,
+	name varchar(50),
+	std varchar(50),
+	marks int
+);
+
+
+JDBC:-
+------
+	1) Statement		2) PreparedStatement		3) CallableStatement
+	CRUD			CRUD				procedures,function,tirggers
+
+
+1) Statement(CRUD)		
+
+C--CREATE--insert
+R--READ---select
+U--UPDATE--update
+D--DELETE--delete
+
+
+Statement:-
+------------
+		1) executeUpdate()--[insert,update,delete]---int---rowsAffected
+
+
+	insert----Student Table
+
+
+StudentDao---Student
+
+Dao - Data Access Object
+
+
+	StudentDao---Student
+		---insert
+		---update
+		---delete
+		---select		
+
+
+
+
+
+		2) executeQuery()---[select]---ResultSet--(Multiple rows)
+
+
+
+		3) execute()---[[insert,update,delete] / [select]]	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2) PreparedStatement(CRUD)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -12,9 +12,8 @@ public class DBConnection
 	private static final String USERNAME="root";
 	private static final String PASSWORD="root";
 
-	
 	// 2) create getConnection method
-	public static void getConnection() 
+	public static Connection getConnection() 
 	{
 		Connection conn = null;
 		try 
@@ -26,14 +25,7 @@ public class DBConnection
 			conn = DriverManager.getConnection(URLNAME, USERNAME, PASSWORD);
 
 			
-			// 5) validate connection object
-			if (conn!=null) 
-			{
-				System.out.println("Db connected : " + conn);
-			} else 
-			{
-				System.out.println("Db not connected : " + conn);
-			}
+			
 		}catch(ClassNotFoundException e) 
 		{
 			e.printStackTrace();
@@ -41,10 +33,20 @@ public class DBConnection
 		{
 			e.printStackTrace();
 		}
-		
+		return conn;
 	}
 	public static void main(String[] args) 
 	{
-		DBConnection.getConnection();
+		Connection conn = DBConnection.getConnection();
+		
+		// 5) validate connection object
+		if (conn!=null) 
+		{
+			System.out.println("Db connected : " + conn);
+		} else 
+		{
+			System.out.println("Db not connected : " + conn);
+		}
+		
 	}
 }
