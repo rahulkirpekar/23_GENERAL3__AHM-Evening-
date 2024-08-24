@@ -297,7 +297,32 @@ mysql>
 
 
 
+POJO - Plain Old Java Object
+-----
 
+StudentBean----Student Table
+rno 		rno 
+name		name
+std		std
+marks		marks
+
+
+jdbc
+	--bean
+		--StudentBean
+			int rno;
+			String name;
+			String std;
+			int marks;
+	--dao
+		--StudentDao
+			---insert()
+			---update()
+			---delete()
+			---select()
+
+	--util
+		---DBConnection
 
 
 
