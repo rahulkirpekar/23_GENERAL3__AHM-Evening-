@@ -171,93 +171,104 @@ public class StudenDao
 	}
 	public static void main(String[] args) 
 	{
+		int rowsAffected = 0; 
 		Scanner sc = new Scanner(System.in);
-
 		StudenDao dao = new StudenDao();
-		
 		ArrayList<StudentBean> list = dao.getAllStudents();
 		
-		System.out.println("list.size() : " + list.size());
-		
-		for (int i = 0; i < list.size(); i++) 
+		while(true) 
 		{
-			StudentBean s = list.get(i);
-			
-			System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks());
-			
+			System.out.println("Enter below choice : ");
+			System.out.println("1) For Insert Student");
+			System.out.println("2) For Update Student");
+			System.out.println("3) For Delete Student");
+			System.out.println("4) For Display All Student records ");
+			System.out.println("5) For Exit Application");
+			int choice = sc.nextInt();
+			switch(choice) 
+			{
+				case 1: 
+						// -------------INSERT Student-------------------------		
+						sc.nextLine();
+						System.out.println("Enter Name : ");
+						String name = sc.nextLine();
+						System.out.println("Enter Std : ");
+						String std = sc.nextLine();
+						System.out.println("Enter Marks : ");
+						int marks = sc.nextInt();
+						
+						StudentBean sbean = new StudentBean(0, name, std, marks);
+						
+						rowsAffected = dao.insertStudent(sbean);
+						
+						if (rowsAffected > 0) 
+						{
+							System.out.println("Student record succesfully Inserted");
+						} else 
+						{
+							System.out.println("Student record not Inserted");
+						}
+						break;
+				case 2:
+						// -------------UPDATE Student-------------------------				
+						System.out.println("Enter Rno Which you want update Student record : ");
+						int rno = sc.nextInt();
+						sc.nextLine();
+						System.out.println("Enter Name : ");
+						name = sc.nextLine();
+						System.out.println("Enter Std : ");
+						std = sc.nextLine();
+						System.out.println("Enter Marks : ");
+						marks = sc.nextInt();
+						
+						sbean = new StudentBean(0, name, std, marks);
+						
+						rowsAffected = dao.updateStudent(sbean , rno);
+						
+						if (rowsAffected > 0) 
+						{
+							System.out.println("Student record succesfully Updated");
+						} else 
+						{
+							System.out.println("Student record not Updated");
+						}
+						break;
+				case 3: 
+						// -------------DELETE Student-------------------------		
+						System.out.println("Enter Rno Which you want to delete Student : ");
+						rno = sc.nextInt();
+						
+						rowsAffected = dao.deleteStudent(rno);
+						
+						if (rowsAffected > 0) 
+						{
+							System.out.println("Student record succesfully Deleted");
+						} else 
+						{
+							System.out.println("Student record not Deleted");
+						}
+						break;
+				case 4:
+						list = dao.getAllStudents();
+					
+						for (int i = 0; i < list.size(); i++) 
+						{
+							StudentBean s = list.get(i);
+							
+							System.out.println(s.getRno()+" " + s.getName()+" " + s.getStd()+" " + s.getMarks());
+						}
+						break;
+						
+				case 5: System.out.println("Application will be exit."); 
+						try 
+						{
+							Thread.sleep(500);
+						} catch (InterruptedException e) 
+						{
+							e.printStackTrace();
+						}
+						System.exit(0);
+			}
 		}
-		
-/*		  
-// -------------UPDATE Student-------------------------				
-		System.out.println("Enter Rno Which you want update Student record : ");
-		int rno = sc.nextInt();
-		sc.nextLine();
-		System.out.println("Enter Name : ");
-		String name = sc.nextLine();
-		System.out.println("Enter Std : ");
-		String std = sc.nextLine();
-		System.out.println("Enter Marks : ");
-		int marks = sc.nextInt();
-		
-		StudentBean sbean = new StudentBean(0, name, std, marks);
-		
-		
-		StudenDao dao = new StudenDao();
-		
-		int rowsAffected = dao.updateStudent(sbean , rno);
-		
-		if (rowsAffected > 0) 
-		{
-			System.out.println("Student record succesfully Updated");
-		} else 
-		{
-			System.out.println("Student record not Updated");
-		}
-		
-*/		
-// -------------DELETE Student-------------------------		
-/*
-		System.out.println("Enter Rno Which you want to delete Student : ");
-		int rno = sc.nextInt();
-		
-		StudenDao dao = new StudenDao();
-		
-		int rowsAffected = dao.deleteStudent(rno);
-		
-		if (rowsAffected > 0) 
-		{
-			System.out.println("Student record succesfully Deleted");
-		} else 
-		{
-			System.out.println("Student record not Deleted");
-		}
-*/		
-// -------------INSERT Student-------------------------		
-/*
-		System.out.println("Enter Name : ");
-		String name = sc.nextLine();
-		System.out.println("Enter Std : ");
-		String std = sc.nextLine();
-		System.out.println("Enter Marks : ");
-		int marks = sc.nextInt();
-		
-		StudentBean sbean = new StudentBean(0, name, std, marks);
-		
-//		sbean.setName(name);
-//		sbean.setStd(std);
-//		sbean.setMarks(marks);		
-		
-		StudenDao dao = new StudenDao();
-		
-		int rowsAffected = dao.insertStudent(sbean);
-		
-		if (rowsAffected > 0) 
-		{
-			System.out.println("Student record succesfully Inserted");
-		} else 
-		{
-			System.out.println("Student record not Inserted");
-		}
-*/	
 	}
 }

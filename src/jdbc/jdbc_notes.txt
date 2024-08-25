@@ -330,7 +330,16 @@ jdbc
 
 
 
-
+mysql> select rno,name,std,marks from student;
+						ArraUList list = new ArrayList();
+   1      2            3       4	
++-----+-------------+------+-------+
+| rno | name        | std  | marks |
++-----+-------------+------+-------+
+|   1 | sagar       | 12   |   100 |--new StudentBean----list
+|   3 | Ankur       | 12   |   100 |--new StudentBean----list
+|   4 | Krunal Shah | 12   |    80 |<===rs--new StudentBean----list
++-----+-------------+------+-------+
 
 
 
