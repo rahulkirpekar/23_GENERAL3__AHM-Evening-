@@ -342,7 +342,20 @@ mysql> select rno,name,std,marks from student;
 +-----+-------------+------+-------+
 
 
+Statement
+	1) insert
+	2) update
+	3) delete
+	4) display all records
 
+	switch---menu driven 	
+--------------------------------------------
+
+PreparedStatement
+	1) insert
+	2) update
+	3) delete
+	4) display all records
 
 
 
